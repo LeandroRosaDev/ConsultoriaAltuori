@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+
+header {
+  background-image: url("./img/intro-bg.png");
+  background-size: cover;
+  height: 1050px;
+  box-shadow: 1px 1px 1rem black;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 4rem;
+}
+nav img {
+  width: 250px;
+}
+nav a {
+  color: white;
+}
+ul {
+  display: flex;
+  gap: 2rem;
+}
+li {
+  font-size: 1.4rem;
+}
+li a:hover {
+  color: #286ed4;
+}
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.intro-container h1,
+.intro-container h2,
+.intro-container button {
+  color: white;
+  font-weight: 300;
+}
+.intro-container h1 {
+  font-size: 3rem;
+}
+.intro-container button {
+  background-color: transparent;
+  width: 200px;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  border: 1px solid white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.intro-container button:hover {
+  background-color: #286ed4;
+  border: 1px solid transparent;
+}
+
+/* AQUI SE INICIA A SEÇÃO SOBRE */
+
+.home-container {
+  padding: 4rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.home-container h1,
+p {
+  color: #3f3f3f;
+}
+.home-container h1 {
+  font-size: 3rem;
+}
+.home-container p {
+  font-size: 1.4rem;
+  max-width: 700px;
+}
+
+/* AQUI SE INICIA A SEÇÃO SERVICOS  */
+
+.servicos-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+.servicos-content div {
+  min-width: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+  text-align: center;
+}
+.servicos-content div img {
+  max-width: 200px;
+}
+.servicos-content div p {
+  max-width: 300px;
+}
