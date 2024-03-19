@@ -3,7 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: black;
+  color: #3f3f3f;
   transition: all 0.4s;
 }
 
@@ -68,24 +68,59 @@ li a:hover {
 
 /* AQUI SE INICIA A SEÇÃO SOBRE */
 
-.home-container {
-  padding: 4rem 4rem;
+.sobre-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 4rem;
+  background-color: #757575;
+}
+.sobre-container-main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
   text-align: center;
+  align-items: center;
+  gap: 1rem;
+}
+.sobre-container-main h1 {
+  font-size: 2.4rem;
+}
+.sobre-container-main p {
+  max-width: 800px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.sobre-container-secondary {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.sobre-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 3rem;
   gap: 2rem;
 }
-.home-container h1,
-p {
-  color: #3f3f3f;
+.sobre-content div {
+  max-width: 500px;
+  text-align: center;
 }
-.home-container h1 {
-  font-size: 3rem;
+.sobre-content h1 {
+  text-transform: uppercase;
 }
-.home-container p {
+.sobre-content p {
   font-size: 1.4rem;
-  max-width: 700px;
+}
+.sobre-content img {
+  max-width: 200px;
 }
 
 /* AQUI SE INICIA A SEÇÃO SERVICOS  */
@@ -95,21 +130,54 @@ p {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 4rem;
+  gap: 6rem;
+  margin: 6rem 6rem;
+  margin-top: 4rem;
+}
+.service-bg {
+  background-image: url("./img/services-bg.png");
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.service-bg h1 {
+  color: white;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.service-bg p {
+  color: white;
+  font-size: 1.2rem;
 }
 .servicos-content div {
-  min-width: 500px;
-  max-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   gap: 2rem;
   text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 1px 0px 5px #3f3f3f;
+  cursor: pointer;
+}
+.servicos-content div:hover {
+  scale: 104%;
 }
 .servicos-content div img {
-  max-width: 200px;
+  max-width: 300px;
+}
+.servicos-content div h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  max-width: 300px;
 }
 .servicos-content div p {
+  font-size: 1.2rem;
   max-width: 300px;
+  max-height: 499px;
 }
