@@ -74,7 +74,7 @@ li a:hover {
   align-items: center;
   justify-content: center;
   padding: 4rem;
-  background-color: #757575;
+  /* background-color: #757575; */
 }
 .sobre-container-main {
   display: flex;
@@ -88,6 +88,9 @@ li a:hover {
 .sobre-container-main h1 {
   font-size: 2.4rem;
 }
+.sobre-container-main h2 {
+  text-align: start;
+}
 .sobre-container-main p {
   max-width: 800px;
   font-size: 1.6rem;
@@ -96,7 +99,6 @@ li a:hover {
 
 .sobre-container-secondary {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -110,14 +112,14 @@ li a:hover {
   gap: 2rem;
 }
 .sobre-content div {
-  max-width: 500px;
-  text-align: center;
+  max-width: 400px;
+  text-align: start;
 }
 .sobre-content h1 {
   text-transform: uppercase;
 }
 .sobre-content p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .sobre-content img {
   max-width: 200px;
@@ -131,7 +133,7 @@ li a:hover {
   align-items: center;
   justify-content: center;
   gap: 6rem;
-  margin: 6rem 6rem;
+  margin: 6rem 2rem;
   margin-top: 4rem;
 }
 .service-bg {
@@ -157,27 +159,60 @@ li a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
   background-color: white;
-  padding: 2rem;
   border-radius: 0.4rem;
   box-shadow: 1px 0px 5px #3f3f3f;
   cursor: pointer;
+  max-width: 400px;
+  height: 400px;
+  padding: 1rem;
 }
-.servicos-content div:hover {
-  scale: 104%;
+.servicos-content div img:hover {
+  scale: 110%;
 }
 .servicos-content div img {
-  max-width: 300px;
+  max-width: 200px;
 }
 .servicos-content div h2 {
   font-size: 1.4rem;
   text-transform: uppercase;
-  max-width: 300px;
 }
 .servicos-content div p {
   font-size: 1.2rem;
-  max-width: 300px;
   max-height: 499px;
+}
+
+/* AQUI SE INICIA A SEÇÃO CONTATO */
+.contato-container {
+  background-image: url("./img/contact-bg.png");
+  height: 580px;
+  display: flex;
+  justify-content: space-around;
+}
+.contato-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+.contato-content h1 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+.contato-content div img {
+  max-width: 100px;
+  margin-right: 2rem;
+}
+.contato-content div img:hover {
+  scale: 107%;
+}
+.contato-content h1 spam {
+  color: white;
+  font-weight: bold;
+  border-bottom: 5px solid #286ed4;
 }
